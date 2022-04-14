@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('goods', function (Blueprint $table) {
             //$table->id()->unique();
-            $table->string('goods_id', 20)
+            $table->primary('goods_id', 20)
                 ->comment('貨物ID');
             $table->string('goods_num', 20)
                 ->comment('貨物編號');

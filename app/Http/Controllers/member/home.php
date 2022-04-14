@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers\member;
 
+use App\Models\prodcut;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 class home extends Controller
 {
+   
     /**
      * Display a listing of the resource.
      *
@@ -40,13 +42,15 @@ class home extends Controller
 
     /**
      * Display the specified resource.
-     *
+     * 檢視所有商品
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function showGoods()
     {
-        //
+        $productDB = new prodcut;
+        $allProduct = $productDB->getAllProduct();
+        return  $allProduct;
     }
 
     /**

@@ -21,6 +21,8 @@ return new class extends Migration
                 ->comment('貨物編號');
             $table->string('goods_name', 20)
                 ->comment('商品名稱');
+            $table->string('owner')
+                ->comment('擁有者');
             $table->string('goods_descript', 100)
                 ->comment('商品描述');
             $table->integer('goods_amount', 30)

@@ -27,8 +27,6 @@ return new class extends Migration
                 ->comment('買家名稱');
             $table->string('seller_acc')
                 ->comment('賣家帳號');
-            $table->string('seller_name')
-                ->comment('賣家名稱');
             $table->integer('goods_amount')
                 ->comment('數量');
             $table->integer('goods_price')
